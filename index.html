@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Xe Nhà Riêng Tư – 0938 547 985</title>
-<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
 <style>
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 
@@ -62,7 +62,7 @@ nav {
 }
 
 .logo {
-  font-family: 'Nunito', sans-serif;
+  
   font-weight: 900;
   font-size: 17px;
   letter-spacing: -0.3px;
@@ -163,7 +163,7 @@ nav {
 }
 
 .hero-title {
-  font-family: 'Nunito', sans-serif;
+  
   font-size: clamp(38px, 5.5vw, 72px);
   font-weight: 900;
   line-height: 1.1;
@@ -281,7 +281,7 @@ nav {
   text-align: center;
 }
 .mini-num {
-  font-family: 'Nunito', sans-serif;
+  
   font-size: 22px;
   font-weight: 900;
   color: var(--accent);
@@ -365,7 +365,7 @@ nav {
   background: var(--accent2);
 }
 .sec-title {
-  font-family: 'Nunito', sans-serif;
+  
   font-size: clamp(24px, 3.5vw, 40px);
   font-weight: 900;
   letter-spacing: -0.5px;
@@ -405,21 +405,27 @@ nav {
 }
 .srv-card:hover::after { opacity: 1; }
 
+.srv-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 12px;
+}
 .srv-icon {
-  width: 52px; height: 52px;
+  width: 44px; height: 44px;
   background: rgba(143,184,118,0.15);
-  border-radius: 14px;
+  border-radius: 12px;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 24px;
-  margin-bottom: 20px;
+  font-size: 22px;
+  flex-shrink: 0;
 }
 .srv-name {
-  font-family: 'Nunito', sans-serif;
-  font-size: 17px;
+  
+  font-size: 16px;
   font-weight: 800;
-  margin-bottom: 8px;
+  line-height: 1.25;
 }
 .srv-desc {
   font-size: 13px;
@@ -531,7 +537,7 @@ nav {
 .contact-label::before { content: ''; width: 20px; height: 1.5px; background: var(--accent2); }
 
 .contact-heading {
-  font-family: 'Nunito', sans-serif;
+  
   font-size: 36px;
   font-weight: 900;
   letter-spacing: -0.5px;
@@ -547,7 +553,7 @@ nav {
 }
 
 .phone-display {
-  font-family: 'Nunito', sans-serif;
+  
   font-size: clamp(32px, 5vw, 52px);
   font-weight: 900;
   letter-spacing: 1px;
@@ -686,7 +692,7 @@ nav {
   margin-bottom: 10px;
 }
 .price-title {
-  font-family: 'Nunito', sans-serif;
+  
   font-size: clamp(22px, 3vw, 32px);
   font-weight: 900;
   letter-spacing: -0.3px;
@@ -724,7 +730,7 @@ footer {
   border-top: 1px solid var(--border);
 }
 .footer-logo {
-  font-family: 'Nunito', sans-serif;
+  
   font-size: 17px;
   font-weight: 900;
   color: var(--muted);
@@ -904,20 +910,17 @@ footer {
     </div>
     <div class="srv-grid">
       <div class="srv-card r">
-        <div class="srv-icon">🏥</div>
-        <div class="srv-name">Đi khám bệnh</div>
+        <div class="srv-header"><div class="srv-icon">🏥</div><div class="srv-name">Đi khám bệnh</div></div>
         <p class="srv-desc">Đưa đón tận nơi, chờ trong suốt quá trình khám. An tâm trọn hành trình, không lo phải tự xoay sở.</p>
         <div class="srv-line"></div>
       </div>
       <div class="srv-card r" style="transition-delay:.08s">
-        <div class="srv-icon">✈️</div>
-        <div class="srv-name">Sân bay – Ga tàu</div>
+        <div class="srv-header"><div class="srv-icon">✈️</div><div class="srv-name">Sân bay – Ga tàu</div></div>
         <p class="srv-desc">Đón tiễn đúng giờ, không lo trễ chuyến. Theo dõi lịch bay, điều chỉnh linh hoạt theo thực tế.</p>
         <div class="srv-line"></div>
       </div>
       <div class="srv-card r" style="transition-delay:.16s">
-        <div class="srv-icon">🎉</div>
-        <div class="srv-name">Đám tiệc – Thăm thân – Công việc</div>
+        <div class="srv-header"><div class="srv-icon">🎉</div><div class="srv-name">Đám tiệc – Thăm thân – Công việc</div></div>
         <p class="srv-desc">Sáng đi chiều về, chờ tại nơi nếu cần. Linh hoạt thời gian, phù hợp mọi lịch trình của bạn.</p>
         <div class="srv-line"></div>
       </div>
