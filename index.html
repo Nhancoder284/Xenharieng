@@ -477,6 +477,7 @@ nav {
 }
 .trust-text { font-size: 12px; font-weight: 700; color: rgba(244,249,240,0.85); }
 .trust-sub { font-size: 10px; color: var(--muted); font-weight: 500; }
+.trust-body { display: flex; flex-direction: column; gap: 2px; }
 
 /* ══════════════════════════════
    CONTACT
@@ -843,11 +844,13 @@ footer {
   .trust-inner {
     display: grid !important;
     grid-template-columns: 1fr 1fr;
-    gap: 12px;
+    gap: 10px;
     justify-content: unset;
   }
-  .trust-item { align-items: flex-start; }
+  .trust-item { align-items: center; gap: 8px; }
   .trust-icon { flex-shrink: 0; width: 34px; height: 34px; font-size: 15px; }
+  .trust-text { font-size: 11px; }
+  .trust-sub { font-size: 10px; }
 
   .contact { padding: 60px 4vw; }
   .contact-main { padding: 28px 22px; border-radius: 18px; }
@@ -941,19 +944,19 @@ footer {
   <div class="trust-inner">
     <div class="trust-item">
       <div class="trust-icon">⏱️</div>
-      <div><div class="trust-text">Đúng giờ cam kết</div><div class="trust-sub">Không trễ hẹn</div></div>
+      <div class="trust-body"><div class="trust-text">Đúng giờ cam kết</div><div class="trust-sub">Không trễ hẹn</div></div>
     </div>
     <div class="trust-item">
       <div class="trust-icon">🧼</div>
-      <div><div class="trust-text">Xe sạch, điều hòa</div><div class="trust-sub">Thoải mái suốt hành trình</div></div>
+      <div class="trust-body"><div class="trust-text">Xe sạch, điều hòa</div><div class="trust-sub">Thoải mái suốt hành trình</div></div>
     </div>
     <div class="trust-item">
       <div class="trust-icon">💬</div>
-      <div><div class="trust-text">Phản hồi ngay</div><div class="trust-sub">Gọi hoặc Zalo 24/7</div></div>
+      <div class="trust-body"><div class="trust-text">Phản hồi ngay</div><div class="trust-sub">Gọi hoặc Zalo 24/7</div></div>
     </div>
     <div class="trust-item">
       <div class="trust-icon">🛡️</div>
-      <div><div class="trust-text">Riêng tư, an toàn</div><div class="trust-sub">Không phát sinh chi phí</div></div>
+      <div class="trust-body"><div class="trust-text">Riêng tư, an toàn</div><div class="trust-sub">Không phát sinh chi phí</div></div>
     </div>
   </div>
 </div>
