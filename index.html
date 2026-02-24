@@ -521,19 +521,102 @@ footer {
 .reveal.visible { opacity: 1; transform: translateY(0); }
 
 /* ─── RESPONSIVE ─── */
-@media (max-width: 768px) {
-  .services-grid { grid-template-columns: 1fr; }
-  .contact-grid { grid-template-columns: 1fr; }
-  .stats-inner { grid-template-columns: repeat(2,1fr); }
-  .hero-car { opacity: 0.12; right: -20px; }
-  .price-inner { flex-direction: column; align-items: flex-start; }
-  .phone-card, .info-card { padding: 36px 28px; }
+@media (max-width: 900px) {
+  .services-grid { grid-template-columns: 1fr 1fr; }
 }
+
+@media (max-width: 768px) {
+  /* Nav */
+  nav { padding: 14px 4vw; }
+  .nav-logo { font-size: 16px; }
+
+  /* Hero */
+  .hero { padding: 90px 5vw 100px; min-height: auto; }
+  .hero-car { opacity: 0.1; right: -10px; bottom: 5%; font-size: 120px; }
+  .hero-sub { max-width: 100%; }
+  .scroll-hint { display: none; }
+
+  /* Stats */
+  .stats-inner { grid-template-columns: repeat(2,1fr); gap: 16px; }
+  .stat-num { font-size: 26px; }
+
+  /* Sections */
+  section { padding: 52px 5vw; }
+
+  /* Services */
+  .services-grid { grid-template-columns: 1fr; gap: 2px; }
+  .service-card { padding: 24px 20px; }
+  .service-card-icon { font-size: 28px; margin-bottom: 12px; }
+
+  /* Price banner */
+  .price-section { padding: 36px 5vw; }
+  .price-inner { flex-direction: column; align-items: flex-start; gap: 20px; }
+  .price-cta { width: 100%; justify-content: center; }
+
+  /* Contact */
+  .contact-grid { grid-template-columns: 1fr; gap: 2px; }
+  .phone-card { padding: 32px 24px; }
+  .info-card { padding: 32px 24px; gap: 22px; }
+  .phone-number-display { font-size: 32px; letter-spacing: 1px; }
+
+  /* Float buttons */
+  .float-cta { bottom: 16px; right: 16px; gap: 8px; }
+  .float-btn { padding: 11px 16px; font-size: 12px; gap: 7px; }
+}
+
 @media (max-width: 480px) {
-  .float-btn span { display: none; }
-  .float-btn { padding: 14px; border-radius: 50%; width: 50px; height: 50px; justify-content: center; }
-  .float-icon { font-size: 20px; }
-  .nav-cta span { display: none; }
+  /* Nav */
+  .nav-logo { font-size: 15px; }
+  .nav-cta { padding: 8px 14px; font-size: 11px; letter-spacing: 0.5px; }
+
+  /* Hero */
+  .hero { padding: 80px 4vw 60px; min-height: 100svh; }
+  .hero-badge { font-size: 9px; letter-spacing: 2px; padding: 6px 14px; }
+  .hero-title { font-size: 30px; line-height: 1.15; }
+  .hero-sub { font-size: 13px; }
+  .hero-actions { flex-direction: row; flex-wrap: wrap; gap: 10px; }
+  .btn-primary, .btn-secondary { width: auto; justify-content: center; padding: 13px 20px; font-size: 12px; }
+  .hero-car { display: none; }
+
+  /* Stats */
+  .stats-bar { padding: 20px 4vw; }
+  .stats-inner { gap: 12px; }
+  .stat-num { font-size: 22px; }
+  .stat-label { font-size: 10px; letter-spacing: 1px; }
+
+  /* Sections */
+  section { padding: 40px 4vw; }
+  .section-label { font-size: 9px; }
+  .section-heading { font-size: 22px; margin-bottom: 28px; }
+
+  /* Services */
+  .service-card { padding: 20px 16px; }
+  .service-card-name { font-size: 15px; }
+  .service-card-desc { font-size: 12px; }
+
+  /* Price banner */
+  .price-eyebrow { font-size: 9px; }
+  .price-headline { font-size: 20px; }
+  .price-desc { font-size: 12px; }
+
+  /* Contact */
+  .phone-card, .info-card { padding: 24px 18px; }
+  .phone-number-display { font-size: 28px; }
+  .phone-label { font-size: 9px; }
+  .btn-call, .btn-zalo { padding: 14px; font-size: 12px; }
+  .info-block-title { font-size: 9px; }
+  .province-tags { gap: 5px; }
+  .province-tag { font-size: 10px; padding: 4px 10px; }
+  .feat { font-size: 12px; }
+
+  /* Float - chỉ icon tròn trên mobile nhỏ */
+  .float-btn { padding: 10px 16px; font-size: 12px; border-radius: 40px; width: auto; height: auto; justify-content: center; }
+  .float-btn span:not(.float-icon) { display: inline; }
+  .float-icon { font-size: 14px; }
+
+  /* Footer */
+  footer { padding: 24px 4vw; }
+  .footer-logo { font-size: 15px; }
 }
 </style>
 </head>
